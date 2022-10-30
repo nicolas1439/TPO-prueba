@@ -110,11 +110,12 @@ body {
   grid-template-columns: repeat(3, 1fr);
     /*layout*/
 	grid-template-areas:  "box1 box2 box3"
-                        "box4 box5 box6"                 
+                        "box4 box5 box6";  
+  margin-bottom: 50px;        
 }
 .box{
   background: #edebc9;
-  padding: 25px 30px;
+  padding: 20px 20px;
   border-radius: 5px;
 }
 .box h3{
@@ -221,7 +222,7 @@ body {
   transition: all ease .5s;
 }
 
-/*SERVICIOS*/
+/*FOOTER*/
 .footer{
   width: 100%;
   max-width: 1200px;
@@ -240,9 +241,108 @@ body {
   text-align: center;
 }
 
+/*RESOINSIVE*/
+@media (max-width: 930px) {
 
+  .banner{
+    background: url(img/banner6.png);
+    background-position: center;
+  } 
+  
+  .banner .encabezado .bnn-tit{
+    font-size: 30px;
+  }
 
+  .servicios .sv-cont{
+    gap: 35px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 3, auto;
+    /*layout*/
+	grid-template-areas:  "box1 box2"
+                        "box3 box4"   
+                        "box5 box6" 
+  }
 
+  .sc-adicional{
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2, auto;
+    grid-template-areas: "izquierda izquierda"
+                         "medio derecha";
+
+    border-radius: 5px;
+    margin-bottom: 70px;
+  }
+  .box-izq p{
+    margin-bottom: 30px;
+  }
+  .box-md{
+    border-left: none;
+  }
+
+  .footer{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 2, auto;
+    grid-template-areas: "izquierda" "medio" "derecha";
+  }
+
+}
+
+@media (max-width: 671px) {
+  
+  .banner .encabezado .bnn-tit{
+    font-size: 30px;
+  }
+
+  .encabezado{
+    width: 80%;
+    max-width: 450px;
+  }
+
+  .servicios .sv-cont{
+    gap: 35px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 6, auto;
+    /*layout*/
+	grid-template-areas:  "box1" "box2"
+                        "box3" "box4"   
+                        "box5" "box6" 
+  }
+
+  .sc-adicional{
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 3, auto;
+    grid-template-areas: "izquierda"
+                         "medio" 
+                         "derecha";
+
+    border-radius: 5px;
+    margin-bottom: 70px;
+  }
+  .box-md{
+    margin-bottom: 20px;
+  }
+  .box-dr{
+    border-left: none;
+  }
+
+  .box-izq p{
+    margin-bottom: 30px;
+  }
+  .box-md{
+    border-left: none;
+  }
+
+  .footer{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 2, auto;
+    grid-template-areas: "izquierda" "medio" "derecha";
+  }
+
+}
 
 /* RESPONSIVE MENU */
 @media (max-width: 810px) {
