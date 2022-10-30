@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: sans-serif;
+    padding-top: 80px;
+}
+  
+.header {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+  
+.nav {
+    display: flex;
+    justify-content: space-between;
+  
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background-color: #038eb4;
+}
+  
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+  
+.logo {
+    font-size: 30px;
+    padding-left: 20px;
+    font-weight: bold;
+    line-height: 80px;
+}
+  
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+}
+  
+.nav-menu-item {
+    font-size: 16px;
+    margin: 0 8px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+  
+.nav-menu-link {
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+  
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    border-bottom:3px solid #034574;
+    transition: 0.5s;
+}
+
+/* TOGGLE */
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+}
+
+/*BANNER*/
+.banner{
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 400px;
+  background: url(img/banner3.png);
+  background-position: center;
+}
+.banner .encabezado{
+  margin: auto;
+  padding-top: 244px;
+  text-align: center;
+}
+.banner .encabezado .bnn-tit{
+  font-size: 39px;
+  margin-bottom: 20px;
+  color: #0f0f0f;
+}
+
+/*SERVICIOS*/
+.servicios{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 30px;
+  padding-top: 80px;
+}
+.sv-cont{
+  display: grid;
+  gap: 35px;
+  grid-template-columns: repeat(3, 1fr);
+    /*layout*/
+	grid-template-areas:  "box1 box2 box3"
+                        "box4 box5 box6"                 
+}
+.box{
+  background: #edebc9;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.box h3{
+  text-transform: uppercase;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 50;
+}
+.box p{
+  font-size: 14px;
+}
+.servicios .box1{
+  grid-area: box1;
+}
+.servicios .box2{
+  grid-area: box2;
+}
+.servicios .box3{
+  grid-area: box3;
+}
+.servicios .box4{
+  grid-area: box4;
+}
+.servicios .box5{
+  grid-area: box5;
+}
+.servicios .box6{
+  grid-area: box6;
+}
+
+.sv-btn{
+  display: block;
+  font-size: 26px;
+  width: 125px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 3px solid #fff;
+  color: #034574;
+}.sv-btn:hover{
+  border-bottom: 3px solid #034574; 
+  transition: all ease .4s; 
+}
+
+/*SECCION ADICIONAL*/
+.sc-adicional{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "izquierda medio derecha";
+  background: #acd5de;
+  border-radius: 5px;
+  margin-bottom: 70px;
+}
+.box-izq{
+  grid-area: izquierda;
+  padding: 10px;
+  font-weight: bold;
+  color: #1a4e8d;
+}
+.box-izq p{
+  font-size: 30px;
+  text-align: center;
+}
+.box-md{
+  grid-area: medio;
+  text-align: center;
+  padding: 20px 0;
+  border-left: 3px solid #1a4e8d;
+}
+.donar{
+  font-size: 18px;
+  margin-bottom: 10px;
+}.box-md p{
+  margin-bottom: 30px;
+}
+.box-dr{
+  grid-area: derecha;
+  text-align: center;
+  padding: 20px 0;  
+  border-left: 3px solid #1a4e8d;
+}
+.inscribir{
+  font-size: 18px;
+  margin-bottom: 10px;
+}.box-dr p{
+  margin-bottom: 30px;
+}
+.box-md a, .box-dr a{
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 2px solid #1a4e8d;
+  border-radius: 5px;
+  color: #1a4e8d;
+  font-weight: bold;
+}.box-md a:hover, .box-dr a:hover{
+  background: #1a4e8d;
+  color: #ffffff;
+  transition: all ease .5s;
+}
+
+/*SERVICIOS*/
+.footer{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  padding-bottom: 30px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "izquierda medio derecha";
+
+  background: #1a4e8d;
+  color: #fff;
+}
+.integ, .tpo, .copi{ 
+  text-align: center;
+}
+
+
+
+
+
+/* RESPONSIVE MENU */
+@media (max-width: 810px) {
+
+    body {
+      padding-top: 60px;
+    }
+  
+    .header {
+      height: 60px;
+    }
+  
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #2c3e50;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #83c5f7;
+    }
+  
+    .nav-toggle {
+      display: block;
+      
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+}
