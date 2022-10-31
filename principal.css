@@ -336,12 +336,6 @@ body {
     border-left: none;
   }
 
-  .footer{
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 2, auto;
-    grid-template-areas: "izquierda" "medio" "derecha";
-  }
-
 }
 
 /* RESPONSIVE MENU */

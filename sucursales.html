@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="sucursales.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <!--Script menu toggle-->
+    <script defer src="menu-toggle.js"></script>
+    
+    <title>CATS & DOGS - Sucursales</title>
+</head>
+<body>
+    
+    <header class="header">
+
+        <nav class="nav">
+
+            <a href="index.html" class="logo nav-link">CATS & DOGS</a>
+
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <!--icono-menu-->
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu">
+
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link nav-link ">Inicio</a>
+                </li>
+
+                <li class="nav-menu-item">
+                    <a href="servicios.html" class="nav-menu-link nav-link">Servicios</a>
+                </li>
+
+                <li class="nav-menu-item">
+                    <a href="sucursales.html" class="nav-menu-link nav-link nav-menu-link_active">Sucursales</a>
+                </li>
+
+                <li class="nav-menu-item"><!-- nav-menu-link_active -->
+                    <a href="contacto.html" class="nav-menu-link nav-link">Contacto</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div class="sc-wrap">
+        <div class="info">
+            <h2>NOS PODES ENCONTRAR <br> EN TODO BUENOS AIRES</h2>
+            <p>Av. Caseros 2061, C1264 CABA</p>
+            <p>Av. Luis María Campos 726, CABA</p>
+            <p>Lisandro Medina 2285, B1678 Caseros.s</p>
+            <p>Dr. Ramón Carrillo 4175, San Justo.</p>
+            <p>Av. Constituyentes 1092, Gral. Pacheco.</p>
+        </div>
+        <div class="map-wrap">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    
+
+    <footer class="footer">
+
+        <p class="integ">INTEGRANTES <br><br> Nicolas Orellana <br><br> Matias Gonzales <br><br> Damian </p>
+
+        <P class="tpo">TRABAJO PRACTICO<br>CURSO DE PROGRAMACIOS</P>
+        
+        <span class="copi">CATS&DOGS®</span>
+
+    </footer>
+
+    <script src="mapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+</html>
